@@ -1,0 +1,8 @@
+enter encryption mechanism
+DoubleEncryptionAlgorithm (RepeatEncryptionAlgorithm ShiftMultEncryptionAlgorithm 3) ShiftUpEncryptionAlgorithm
+enter encryption option: encrypt / decrypt
+encrypt
+enter file for encryption
+tst.txt
+encryption key was written to C:\Users\User\projects\polimorphic-enc-dec\key.dat
+file C:\Users\User\projects\polimorphic-enc-dec\tst.txt was encrypted into C:\Users\User\projects\polimorphic-enc-dec\tst_encrypted.txt
