@@ -6,7 +6,10 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.SequenceInputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class DoubleEncryptionKey implements EncryptionKey {
     private final EncryptionKey encryptionKey1;

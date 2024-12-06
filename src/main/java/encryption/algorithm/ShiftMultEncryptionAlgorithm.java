@@ -40,5 +40,17 @@ public class ShiftMultEncryptionAlgorithm implements EncryptionAlgorithm {
             }
             return 0xff & (read * shift);
         }
+
+        @Override
+        public int read(byte[] b, int off, int len) throws IOException {
+            int read = super.read(b, off, len);
+            if (read == -1) {
+                return -1;
+            }
+            for (int i = off; i < read; i++) {
+                b[i] *= shift;
+            }
+            return read;
+        }
     }
 }
